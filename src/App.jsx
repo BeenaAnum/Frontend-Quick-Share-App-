@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 // IMPORTANT: Yahan deployment ke baad backend ka URL aayega
-const API_URL = "http://localhost:5000"; // Development ke liye
+const API_URL = "https://backend-quick-share-h198l1edi-beena-anums-projects.vercel.app/";
+ // Deployed Backend ka URL env variable se aayega
+// Development ke liye
 function App() {
 const [text, setText] = useState("");
 const [loading, setLoading] = useState(false);
@@ -59,66 +61,6 @@ style={loading ? {...styles.button, opacity: 0.7} : styles.button}
 );
 }
 
-// const styles = {
-//   container: {
-//     display: 'flex',
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//     minHeight: '100vh',
-//     backgroundColor: '#f0f2f5',
-//     fontFamily: 'Arial'
-//   },
-//   card: {
-//     backgroundColor: 'white',
-//     padding: '2rem',
-//     borderRadius: '15px',
-//     boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
-//     width: '90%',
-//     maxWidth: '500px',
-//     textAlign: 'center'
-//   },
-//   title: {
-//     color: '#1a73e8',
-//     marginBottom: '10px'
-//   },
-//   subtitle: {
-//     color: '#5f6368',
-//     fontSize: '14px',
-//     marginBottom: '20px'
-//   },
-//   textarea: {
-//     width: '100%',
-//     height: '150px',
-//     padding: '12px',
-//     borderRadius: '10px',
-//     border: '1px solid #ddd',
-//     fontSize: '16px',
-//     outline: 'none',
-//     boxSizing: 'border-box'
-//   },
-//   button: {
-//     width: '100%',
-//     marginTop: '15px',
-//     padding: '12px',
-//     backgroundColor: '#1a73e8',
-//     color: 'white',
-//     border: 'none',
-//     borderRadius: '8px',
-//     cursor: 'pointer',
-//     fontSize: '16px',
-//     fontWeight: 'bold'
-//   },
-//   msg: {
-//     marginTop: '10px',
-//     color: '#28a745',
-//     fontWeight: '500'
-//   },
-//   footer: {
-//     marginTop: '20px',
-//     fontSize: '11px',
-//     color: '#999'
-//   }
-// };
 const styles = {
   container: {
     display: 'flex',

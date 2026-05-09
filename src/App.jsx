@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 // IMPORTANT: Yahan deployment ke baad backend ka URL aayega
 const API_URL = import.meta.env.VITE_API_URL ||
-"https://backend-quick-share-app.vercel.app/";
+"https://backend-quick-share-app.vercel.app";
  // Deployed Backend ka URL env variable se aayega
 // Development ke liye
 function App() {
